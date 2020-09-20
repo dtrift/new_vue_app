@@ -1,7 +1,7 @@
 <p><%= render 'shared/flash' %></p>
-<p>Main Menu</p>
-<p><%= link_to 'Staffs', staff_root_path %></p>
 
-<% if staff_signed_in? %>
-  <p><%= button_to 'Выход', destroy_staff_session_path, method: :delete %></p>
-<% end %>
+<p>Main Menu</p>
+<p>
+  <%= link_to 'Staffs', staff_root_path %>
+  <%= link_to 'Clients', client_root_path %>
+</p>
