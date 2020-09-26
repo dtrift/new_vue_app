@@ -1,0 +1,5 @@
+<% if client_signed_in? %>
+  <h1>Hello <%= current_client.email %></h1>
+
+  <p><%= button_to 'Выход', destroy_client_session_path, method: :delete %></p>
+<% end %>
